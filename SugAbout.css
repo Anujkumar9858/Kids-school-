@@ -1,0 +1,21 @@
+.program-btns {
+  background-color: #6D4DDF;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 999px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program-btns:hover {
+  background-color: #5938c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

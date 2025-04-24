@@ -1,0 +1,184 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+.events-section {
+  background-color: #FFFFFF;
+  font-family: 'Original Surfer', cursive;
+}
+
+@media (min-width: 1200px) {
+  .events-section .container-fluid {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .events-section .container-fluid {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+}
+
+.section-title {
+  font-family: 'Original Surfer', cursive;
+  font-size: 50px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-family: 'Outfit', cursive;
+  color: #878787;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.event-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  background: #FFFFFF;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(109, 77, 223, 0.1);
+}
+
+.event-image-container {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.event-card:hover .event-image-container img {
+  transform: scale(1.05);
+}
+
+.event-title {
+  font-family: 'Outfit', cursive;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6D4DDF;
+  margin-bottom: 1rem;
+}
+
+.event-meta {
+  font-family: 'Outfit', ;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  color: #878787;
+  font-size: 16px;
+  font-family: 'Poppins', cursive;
+}
+
+.meta-item svg {
+  color: #6D4DDF;
+}
+
+.event-desc {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', cursive;
+  line-height: 1.6;
+}
+
+.read-more-link {
+  color: #FEC247;
+  font-weight: 600;
+  font-family: 'Poppins', cursive;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+  text-decoration: none;
+  position: relative;
+  padding-right: 20px;
+}
+
+.read-more-link:hover {
+  color: #e6b742;
+}
+
+.read-more-link::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.read-more-link:hover::after {
+  right: -5px;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 40px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+  }
+  
+  .event-title {
+    font-size: 22px;
+  }
+  
+  .event-image-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+  }
+  
+  .events-section .container-fluid {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .event-card {
+    margin-bottom: 30px;
+  }
+  
+  .event-image-container {
+    height: 180px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+  }
+  
+  .event-desc {
+    font-size: 15px;
+  }
+}

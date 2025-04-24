@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Condiment&family=Poppins:wght@400;600&display=swap');
+
+.hero-sections {
+  position: relative;
+  padding: 100px 0 50px;
+  margin-top: 5px;
+  background-color: white !important;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  height: 115vh;
+}
+
+.hero-containers {
+  position: relative;
+  z-index: 2;
+  bottom: -45px;
+  box-shadow: #f5b618;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.learn-text {
+  font-family: 'Condiment', cursive;
+  color: #6c47ff;
+  font-size: 100px;
+  margin: 0 10px;
+}
+
+.play-text {
+  font-family: 'Condiment', cursive;
+  color: #f5b618;
+  font-size: 100px;
+  margin-left: 10px;
+}
+
+.and-space {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.enroll-btns {
+  background-color: #6c47ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.arrow-icon {
+  display: inline-block;
+  font-weight: bold;
+  background: white;
+  color: #6c47ff;
+  padding: 4px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.kids-img {
+  position: absolute;
+  bottom: -15%;
+  left: -110px;
+  width: 430px;
+  max-width: 100%;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.paper-plane {
+  position: absolute;
+  top: 30%;
+  right: -3%;
+  width: 600px;
+  rotate: -20deg;
+  animation: fly 4s ease-in-out infinite;
+}
+
+.cloud {
+  position: absolute;
+  opacity: 0.8;
+}
+
+.cloud2 {
+  top: -8%;
+  left: 82%;
+  width: 260px;
+  z-index: 0;
+}
+
+.cloud3 {
+  top: 59%;
+  right: -3%;
+  width: 410px;
+  z-index: 0;
+}
+
+.cloud1 {
+  top: -8%;
+  left: -9%;
+  width: 310px;
+  z-index: 0;
+}
+
+@keyframes fly {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .learn-text, .play-text {
+    font-size: 2.2rem;
+  }
+
+  .paper-plane {
+    width: 50px;
+  }
+
+  .kids-img {
+    width: 180px;
+  }
+}

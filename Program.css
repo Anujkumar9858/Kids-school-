@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+.programs-section {
+  padding: 60px 0;
+  background-color: #FFFFFF;
+  font-family: 'Original Surfer', cursive;
+  background-image: url('https://example.com/kids-pattern.png');
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.main-headings {
+  font-family: 'Original Surfer', cursive;
+  font-size: 60px;
+  font-weight: 700;
+  color: #6D4DDF;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-family: 'Poppins', cursive;
+  font-size: 30px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.decoration {
+  margin-top: 20px;
+}
+
+.decoration span {
+  font-size: 24px;
+  margin: 0 10px;
+  animation: bounce 2s infinite;
+}
+
+.decoration .heart {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.program-cards {
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.program-card {
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 35px;
+  height: 95%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.program-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.program-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.program-title {
+  font-family: 'Original Surfer', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: #6D4DDF;
+  margin-bottom: 15px;
+}
+
+.program-age {
+  font-family: 'Poppins', cursive;
+  font-size: 18px;
+  color: #e49c0b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.program-desc {
+  font-family: 'Poppins', cursive;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+.program-btn {
+  font-family: 'Poppins', cursive;
+  /* height: 70px; */
+  font-size: 16px;
+  font-weight: 600;
+  color: #f7f6fc;
+  
+  background-color: #6D4DDF;
+  border: 2px solid #6D4DDF;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
+.program-btn:hover {
+  background-color: 6D4DDF;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #F0F4F8;
+  border-radius: 20px;
+}
+
+.footer-desc {
+  font-size: 24px;
+  color: #303031;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.footer-span {
+  color: #62529d;
+}
+
+.footer-creativity {
+  color: #e1b865;
+}
+
+.footer-confidence {
+  color: #aa9cdc;
+}
+
+.modal-title {
+  color: white;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-icon {
+  font-size: 32px;
+  margin-right: 15px;
+}
+
+.modal-age {
+  color: #6D4DDF;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-desc {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-features {
+  background-color: #F8F9FA;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.modal-features h4 {
+  color: #6D4DDF;
+  margin-bottom: 10px;
+}
+
+.modal-features ul {
+  padding-left: 20px;
+}
+
+.modal-features li {
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+.enroll-btn {
+  border-radius: 50px;
+  padding: 8px 20px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.enroll-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .main-heading {
+    font-size: 50px;
+  }
+
+  .sub-heading {
+    font-size: 25px;
+  }
+
+  .program-title {
+    font-size: 25px;
+  }
+
+  .footer-desc {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 40px;
+  }
+
+  .sub-heading {
+    font-size: 20px;
+  }
+
+  .program-card {
+    padding: 20px;
+  }
+
+  .program-title {
+    font-size: 22px;
+  }
+
+  .program-age {
+    font-size: 16px;
+  }
+
+  .footer-desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 32px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+  }
+
+  .program-title {
+    font-size: 20px;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+}

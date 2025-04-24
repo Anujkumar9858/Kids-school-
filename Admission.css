@@ -1,0 +1,290 @@
+/* Import Original Surfer font */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+.admission-section {
+  background-color: #FFFFFF;
+  font-family: 'Original Surfer', cursive;
+}
+
+/* Custom padding for different screen sizes */
+@media (min-width: 1200px) {
+  .admission-section .container-fluid {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .admission-section .container-fluid {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #6D4DDF;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #FEC247;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-family: 'Outfit', cursive;
+  color: #878787;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.process-card,
+.admission-info-card {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(41, 39, 46, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.process-card:hover,
+.admission-info-card:hover {
+  box-shadow: 0 15px 40px rgba(109, 77, 223, 0.2);
+  transform: translateY(-5px);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #6D4DDF, #E0CAF9);
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -50px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #6D4DDF 0%, #E0CAF9 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(109, 77, 223, 0.35);
+}
+
+.step-icon {
+  font-size: 1.8rem;
+}
+
+.step-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #FEC247;
+  color: #333333;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.timeline-content {
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  /* font-family: 'Outfit', cursive; */
+}
+
+.timeline-content h4 {
+  font-family: 'Outfit', cursive;
+  color: #6D4DDF;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-family: 'Poppins', cursive;
+  color: #878787;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.duration-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #F0F0F0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.admission-info-card h3 {
+  font-family: 'Outfit', cursive;
+  color: #6D4DDF;
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.admission-info-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #FEC247;
+}
+
+.info-text {
+  font-family: 'Poppins', cursive;
+  color: #121010;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.key-dates h5,
+.documents h5 {
+  font-family: 'Outfit', cursive;
+  color: #6D4DDF;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.key-dates ul,
+.documents ul {
+  font-family: 'Poppins', cursive;
+  padding-left: 20px;
+}
+
+.key-dates li,
+.documents li {
+  color: #333333;
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-size: 16px;
+}
+
+.key-dates li::before,
+.documents li::before {
+  content: '•';
+  color: #6D4DDF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.apply-now-btn {
+  font-family: 'Poppins', cursive;
+  background-color: #6D4DDF;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 18px;
+}
+
+.apply-now-btn:hover {
+  background-color: #5a3fc5;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(109, 77, 223, 0.3);
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .timeline-icon {
+    width: 70px;
+    height: 70px;
+    left: -45px;
+  }
+
+  .admission-info-card h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-section .container-fluid {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .timeline::before {
+    left: 35px;
+  }
+
+  .timeline-content {
+    margin-left: 40px;
+  }
+
+  .timeline-icon {
+    width: 60px;
+    height: 60px;
+    left: -40px;
+  }
+
+  .step-icon {
+    font-size: 1.5rem;
+  }
+
+  .admission-info-card h3 {
+    font-size: 22px;
+  }
+
+  .apply-now-btn {
+    font-size: 16px;
+  }
+}
